@@ -38,7 +38,7 @@ function AppFeature() {
                     cover={<img alt="Captain" src={image1} height = "190px"  />}
                 >
                     <Meta title="Captain America"/>
-                </Card>,
+                </Card>
                 </Col>
                 <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
                 <Card
@@ -46,7 +46,7 @@ function AppFeature() {
                     cover={<img alt="Iron Man" src={image2}  height="190px" />}
                 >
                     <Meta title="Iron Man"/>
-                </Card>,
+                </Card>
                 </Col>
                 <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
                 <Card
@@ -54,7 +54,7 @@ function AppFeature() {
                     cover={<img alt="Nick" src={image3} height="190px" />}
                 >
                     <Meta title="Nick Fury"/>
-                </Card>,
+                </Card>
                 </Col>
                 <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
                 <Card
@@ -62,7 +62,7 @@ function AppFeature() {
                     cover={<img alt="Thor" src={image4} height="190px"/>}
                 >
                     <Meta title="Thor"/>
-                </Card>,
+                </Card>
                 </Col>
                 <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
                 <Card
@@ -70,7 +70,7 @@ function AppFeature() {
                     cover={<img alt="LOKI" src={image5} height="190px"/>}
                 >
                     <Meta title="LOKI"/>
-                </Card>,
+                </Card>
                 </Col>
                 <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
                 <Card
@@ -78,7 +78,7 @@ function AppFeature() {
                     cover={<img alt="Doctor" src={image6} height="190px"/>}
                 >
                     <Meta title="Doctor Strange"/>
-                </Card>,
+                </Card>
                 </Col>
                 <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
                 <Card
@@ -86,7 +86,7 @@ function AppFeature() {
                     cover={<img alt="Hulk" src={image7} height="190px"/>}
                 >
                     <Meta title="The Hulk"/>
-                </Card>,
+                </Card>
                 </Col>
                 <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
                 <Card
@@ -94,7 +94,7 @@ function AppFeature() {
                     cover={<img alt="widow" src={image8} height="190px"/>}
                 >
                     <Meta title="Black Widow"/>
-                </Card>,
+                </Card>
                 </Col>
                 <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
                 <Card
@@ -102,7 +102,7 @@ function AppFeature() {
                     cover={<img alt="Hawk" src={image9} height="190px"/>}
                 >
                     <Meta title="Hawkeye"/>
-                </Card>,
+                </Card>
                 </Col>
                 <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
                 <Card
@@ -110,7 +110,7 @@ function AppFeature() {
                     cover={<img alt="Wanda" src={image10} height="190px"/>}
                 >
                     <Meta title="Wanda Maximoff"/>
-                </Card>,
+                </Card>
                 </Col>
                 <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
                 <Card
@@ -118,7 +118,7 @@ function AppFeature() {
                     cover={<img alt="Vision" src={image11} height="190px"/>}
                 >
                     <Meta title="Vision"/>
-                </Card>,
+                </Card>
                 </Col>
                 <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
                 <Card
@@ -126,7 +126,7 @@ function AppFeature() {
                     cover={<img alt="Black" src={image12} height="190px"/>}
                 >
                     <Meta title="Black Panther"/>
-                </Card>,
+                </Card>
                 </Col>
                 <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
                 <Card
@@ -134,7 +134,7 @@ function AppFeature() {
                     cover={<img alt="Spider" src={image13} height="190px"/>}
                 >
                     <Meta title="SpiderMan"/>
-                </Card>,
+                </Card>
                 </Col>
                 <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
                 <Card
@@ -142,7 +142,7 @@ function AppFeature() {
                     cover={<img alt="Ant" src={image14} height="190px"/>}
                 >
                     <Meta title="Ant Man"/>
-                </Card>,
+                </Card>
                 </Col>
                 <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
                 <Card
@@ -150,7 +150,7 @@ function AppFeature() {
                     cover={<img alt="Captain Marvel" src={image15} height="190px"/>}
                 >
                     <Meta title="Captain Marvel"/>
-                </Card>,
+                </Card>
                 </Col>
                 <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
                 <Card
@@ -158,7 +158,7 @@ function AppFeature() {
                     cover={<img alt="Falcon" src={image16} height="190px"/>}
                 >
                     <Meta title="Falcon"/>
-                </Card>,
+                </Card>
                 </Col>
                 <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
                 <Card
@@ -166,7 +166,7 @@ function AppFeature() {
                     cover={<img alt="Winter" src={image17} height="190px"/>}
                 >
                     <Meta title="Winter Soldier"/>
-                </Card>,
+                </Card>
                 </Col>
                 <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
                 <Card
@@ -174,7 +174,7 @@ function AppFeature() {
                     cover={<img alt="War" src={image18} height="190px"/>}
                 >
                     <Meta title="War Machine"/>
-                </Card>,
+                </Card>
                 </Col>
                 </Row>
             </div>
