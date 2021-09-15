@@ -23,8 +23,8 @@ class AppWork extends React.Component {
       <div id="works" className="block worksBlock">
         <div className="container-fluid">
           <div className="titleHolder">
-            <h2>Trailer</h2>
-            <p>Avengers End Game Trailer</p>
+            <h2 data-aos="fade-up" >Trailer</h2>
+            <p data-aos="fade-up" >Avengers End Game Trailer</p>
           </div>
           <div className="contentHolder">
             <Button size="large" onClick={this.showModal}><i className="fas fa-play"></i></Button>

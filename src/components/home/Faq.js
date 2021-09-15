@@ -1,17 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import { Button } from 'antd';
 import { Collapse } from 'antd';
 const { Panel } = Collapse;
 
 function AppFaq() {
+    useEffect(() => {
+        Aos.init({ duration:2000 });
+     }, [])
     return(
         <div id="faq" className="block faqBlock">
             <div className="container-fluid">
                 <div className="titleHolder">
-                <h2>Frequently Asked Questions</h2>
-                <p>All the biggest questions from Avengers: Endgame, answered</p>
+                <h2 data-aos="fade-up">Frequently Asked Questions</h2>
+                <p data-aos="fade-up">All the biggest questions from Avengers: Endgame, answered</p>
                 </div>
-                <Collapse defaultActiveKey={['1']} >
+                <Collapse  defaultActiveKey={['1']} >
                     <Panel header="HOW DOES TIME-TRAVEL WORK IN THE MCU?" key="1">
                     <p>Time-travel is apparently just a thing now in this franchise, and the characters don’t make a big enough deal about it. This isn’t the first time we’ve seen time-travel in Marvel’s movies. Doctor Strange did it first, although in a vastly different way with seemingly different rules. Using the Time Stone, Strange and, later, Thanos, were able to rewind time entirely, then allow events to play out in a different way. <br/>
                     But with the use of the Quantum Realm, the Avengers are time-traveling differently. (And, as the movie goes to great pains to explain, it’s in a manner that distinctly isn’t like Back to the Future.) Quantum Realm time-travel can’t retroactively change the present where the time-traveler originated, so going back and killing someone’s grandfather (or baby Thanos, as was suggested during the movie) won’t undo the present —
@@ -50,9 +55,11 @@ function AppFaq() {
                     </Panel>
                 </Collapse>
                 <div className="quickSupport">
-                    <h3>Want More Answers?</h3>
-                    <p>If you want to ask more questions related to Avengers so you can mail me..</p>
-                    <Button style={{ background: "#5a1891", borderColor:"#4c107c"}} size="large"><i className="fas fa-envelope"></i>Email Your Questions?</Button>
+                    <h3 data-aos="slide-up">Want More Answers?</h3>
+                    <p data-aos="slide-up">If you want to ask more questions related to Avengers so you can mail me..</p>
+                    <div className="btnHolder">
+                    <Button data-aos="flip-down" className="exp" size="large"><i className="fas fa-envelope"></i>Email Your Questions?</Button>
+                    </div>
                 </div>
             </div>
         </div>

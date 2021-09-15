@@ -66,7 +66,7 @@ const items = [
 function AppHero() {
     return(
         <div id="hero" className="heroBlock">
-             <Carousel>
+             <Carousel autoplay>
                  {items.map(item => {
                      return(
                          <div  className="container-fluid" key={item.key}>
@@ -75,7 +75,7 @@ function AppHero() {
                                  <h3>{item.title}</h3>
                                 <p>{item.content}</p> 
                                 <div className="btnHolder">
-                                <Button style={{ background: "#5a1891", borderColor:"#4c107c"}} size="large">Explore More</Button>
+                                <Button className="exp" size="large">Explore More</Button>
                                 <Button size="large"><i className="fas fa-desktop"></i>Watch Heros</Button>
                                 </div>
                              </div>

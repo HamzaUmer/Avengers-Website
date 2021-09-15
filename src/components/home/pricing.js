@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import { List, Card } from 'antd';
 import { Button } from 'antd';
 
@@ -45,18 +47,21 @@ const data = [
   ];
 
 function AppPricing() {
+  useEffect(() => {
+    Aos.init({ duration:2000 });
+ }, [])
     return(
         <div id="pricing" className= "pricingBlock bgPurple">
             <div className= "container-fluid">
                 <div className= "titleHolder">
-                <h2>Pricing of Costumes</h2>
-                <p>We have three types of Pricing plans of Costumes, Gadgets and Props.</p>
+                <h2 data-aos="fade-up">Pricing of Costumes</h2>
+                <p data-aos="fade-up">We have three types of Pricing plans of Costumes, Gadgets and Props.</p>
                 </div>
                 <List
                     grid={{
                         gutter: 16,
                         xs: 1,
-                        sm: 2,
+                        sm: 1,
                         md: 3,
                         lg: 3,
                         xl: 3,
@@ -65,14 +70,16 @@ function AppPricing() {
                 dataSource={data}
                 renderItem={item => (
                 <List.Item>
-                    <Card title={item.title}>
-                        <p className="large">{item.content[0].price}</p>
-                        <p>{item.content[0].stuff}</p>
-                        <p>{item.content[0].quantity}</p>
-                        <p>{item.content[0].support}</p>
-                        <p>{item.content[0].sizes}</p>
-                        <p>{item.content[0].delivery}</p>
-                        <Button style={{ background: "#5a1891", borderColor:"#4c107c"}} size="large"><i className="fab fa-telegram-plane"></i> Buy It</Button>
+                    <Card data-aos="zoom-in" title={item.title}>
+                        <p data-aos="zoom-in" className="large">{item.content[0].price}</p>
+                        <p data-aos="zoom-in">{item.content[0].stuff}</p>
+                        <p data-aos="zoom-in">{item.content[0].quantity}</p>
+                        <p data-aos="zoom-in">{item.content[0].support}</p>
+                        <p data-aos="zoom-in">{item.content[0].sizes}</p>
+                        <p data-aos="zoom-in">{item.content[0].delivery}</p>
+                        <div className="btnHolder">
+                        <Button data-aos="zoom-in" className="exp1" size="large"><i className="fab fa-telegram-plane"></i> Buy It</Button>
+                        </div>
                     </Card>
                 </List.Item>
                 )}

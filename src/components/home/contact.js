@@ -1,27 +1,35 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import { Form, Input, Button, Checkbox } from 'antd';
 const { TextArea } = Input;
 
 function AppContact() {
+    useEffect(() => {
+        Aos.init({ duration:2000 });
+     }, [])
     return(
         <div id="contact" className = "block contactBlock">
             <div className="container-fluid">
                 <div className="titleHolder">
-                <h2>Get in Touch</h2>
-                 <p>If you have any Questions Contact Us</p>
+                <h2 data-aos="fade-up">Get in Touch</h2>
+                 <p data-aos="fade-up">If you have any Questions Contact Us</p>
                 </div>
                 <Form
+                data-aos="zoom-in-up"
                 name="normal_login"
                 className="login-form"
                 initialValues={{ remember: true }}
                 >
                 <Form.Item
+                data-aos="slide-up"
                     name="fullname"
                     rules={[{ required: true, message: 'Please input Full Name!' }]}
                 >
                     <Input placeholder="Full Name" />
                 </Form.Item>
                 <Form.Item
+                data-aos="slide-up"
                     name="email"
                     rules={[
                         {
@@ -39,6 +47,7 @@ function AppContact() {
                     />
                 </Form.Item>
                 <Form.Item
+                data-aos="slide-up"
                     name="telephone"
                 >
                     <Input placeholder="Telephone" />
@@ -49,11 +58,13 @@ function AppContact() {
                     <Input placeholder="Subject" />
                 </Form.Item>
                 <Form.Item
+                data-aos="slide-up"
                     name="message"
                 >
                     <TextArea placeholder="Message" />
                 </Form.Item>
                 <Form.Item
+                data-aos="slide-up"
                     name="agreement"
                     valuePropName="checked"
                     rules={[
@@ -63,15 +74,17 @@ function AppContact() {
                     },
                     ]}
                 >
-                    <Checkbox >
+                    <Checkbox data-aos="slide-up" >
                     I agree with terms and conditions.
                     </Checkbox>
                   </Form.Item>
 
                 <Form.Item>
-                    <Button style={{ background: "#5a1891", borderColor:"#4c107c"}} htmlType="submit" className="login-form-button">
+                    <div className="btnHolder">
+                    <Button data-aos="fade-up" className="exp" htmlType="submit" >
                     Sumbit
                     </Button>
+                    </div>
                 </Form.Item>
                 </Form>
 
